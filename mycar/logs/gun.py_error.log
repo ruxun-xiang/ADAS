@@ -1,0 +1,616 @@
+[2020-12-08 11:59:56 +0800] [14257] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 11:59:56 +0800] [14257] [INFO] Listening at: http://0.0.0.0:5000 (14257)
+[2020-12-08 11:59:56 +0800] [14257] [INFO] Using worker: sync
+[2020-12-08 11:59:56 +0800] [14261] [INFO] Booting worker with pid: 14261
+[2020-12-08 11:59:56 +0800] [14261] [ERROR] inconsistent use of tabs and spaces in indentation (app.py, line 36)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2020-12-08 11:59:56 +0800] [14261] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 11:59:56 +0800] [14261] [INFO] Worker exiting (pid: 14261)
+[2020-12-08 11:59:56 +0800] [14257] [INFO] Shutting down: Master
+[2020-12-08 11:59:56 +0800] [14257] [INFO] Reason: Worker failed to boot.
+[2020-12-08 12:01:06 +0800] [14699] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 12:01:06 +0800] [14699] [INFO] Listening at: http://0.0.0.0:5000 (14699)
+[2020-12-08 12:01:06 +0800] [14699] [INFO] Using worker: sync
+[2020-12-08 12:01:06 +0800] [14708] [INFO] Booting worker with pid: 14708
+[2020-12-08 12:01:06 +0800] [14708] [ERROR] inconsistent use of tabs and spaces in indentation (app.py, line 36)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2020-12-08 12:01:06 +0800] [14708] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 12:01:06 +0800] [14708] [INFO] Worker exiting (pid: 14708)
+[2020-12-08 12:01:06 +0800] [14699] [INFO] Shutting down: Master
+[2020-12-08 12:01:06 +0800] [14699] [INFO] Reason: Worker failed to boot.
+[2020-12-08 12:01:52 +0800] [14972] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 12:01:52 +0800] [14972] [INFO] Listening at: http://0.0.0.0:5000 (14972)
+[2020-12-08 12:01:52 +0800] [14972] [INFO] Using worker: sync
+[2020-12-08 12:01:52 +0800] [14981] [INFO] Booting worker with pid: 14981
+[2020-12-08 12:01:52 +0800] [14981] [ERROR] inconsistent use of tabs and spaces in indentation (app.py, line 36)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2020-12-08 12:01:52 +0800] [14981] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 12:01:52 +0800] [14981] [INFO] Worker exiting (pid: 14981)
+[2020-12-08 12:01:52 +0800] [14972] [INFO] Shutting down: Master
+[2020-12-08 12:01:52 +0800] [14972] [INFO] Reason: Worker failed to boot.
+[2020-12-08 12:02:17 +0800] [15138] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 12:02:17 +0800] [15138] [INFO] Listening at: http://0.0.0.0:5000 (15138)
+[2020-12-08 12:02:17 +0800] [15138] [INFO] Using worker: sync
+[2020-12-08 12:02:17 +0800] [15147] [INFO] Booting worker with pid: 15147
+[2020-12-08 12:02:17 +0800] [15147] [ERROR] inconsistent use of tabs and spaces in indentation (app.py, line 36)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2020-12-08 12:02:17 +0800] [15147] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 36
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 12:02:17 +0800] [15147] [INFO] Worker exiting (pid: 15147)
+[2020-12-08 12:02:17 +0800] [15138] [INFO] Shutting down: Master
+[2020-12-08 12:02:17 +0800] [15138] [INFO] Reason: Worker failed to boot.
+[2020-12-08 12:03:59 +0800] [15824] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 12:03:59 +0800] [15824] [INFO] Listening at: http://0.0.0.0:5000 (15824)
+[2020-12-08 12:03:59 +0800] [15824] [INFO] Using worker: sync
+[2020-12-08 12:03:59 +0800] [15833] [INFO] Booting worker with pid: 15833
+[2020-12-08 12:03:59 +0800] [15833] [ERROR] inconsistent use of tabs and spaces in indentation (app.py, line 39)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 39
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2020-12-08 12:03:59 +0800] [15833] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 39
+    print("Stop!")
+                 ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 12:03:59 +0800] [15833] [INFO] Worker exiting (pid: 15833)
+[2020-12-08 12:03:59 +0800] [15824] [INFO] Shutting down: Master
+[2020-12-08 12:03:59 +0800] [15824] [INFO] Reason: Worker failed to boot.
+[2020-12-08 12:04:42 +0800] [16179] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 12:04:42 +0800] [16179] [INFO] Listening at: http://0.0.0.0:5000 (16179)
+[2020-12-08 12:04:42 +0800] [16179] [INFO] Using worker: sync
+[2020-12-08 12:04:42 +0800] [16186] [INFO] Booting worker with pid: 16186
+[2020-12-08 13:28:19 +0800] [17015] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:28:19 +0800] [17015] [INFO] Listening at: http://0.0.0.0:5000 (17015)
+[2020-12-08 13:28:19 +0800] [17015] [INFO] Using worker: sync
+[2020-12-08 13:28:19 +0800] [17024] [INFO] Booting worker with pid: 17024
+[2020-12-08 13:28:19 +0800] [17024] [ERROR] invalid character in identifier (app.py, line 55)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+[2020-12-08 13:28:19 +0800] [17024] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 13:28:19 +0800] [17024] [INFO] Worker exiting (pid: 17024)
+[2020-12-08 13:28:19 +0800] [17015] [INFO] Shutting down: Master
+[2020-12-08 13:28:19 +0800] [17015] [INFO] Reason: Worker failed to boot.
+[2020-12-08 13:28:26 +0800] [17066] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:28:26 +0800] [17066] [INFO] Listening at: http://0.0.0.0:5000 (17066)
+[2020-12-08 13:28:26 +0800] [17066] [INFO] Using worker: sync
+[2020-12-08 13:28:26 +0800] [17069] [INFO] Booting worker with pid: 17069
+[2020-12-08 13:28:26 +0800] [17069] [ERROR] invalid character in identifier (app.py, line 55)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+[2020-12-08 13:28:26 +0800] [17069] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 13:28:26 +0800] [17069] [INFO] Worker exiting (pid: 17069)
+[2020-12-08 13:28:26 +0800] [17066] [INFO] Shutting down: Master
+[2020-12-08 13:28:26 +0800] [17066] [INFO] Reason: Worker failed to boot.
+[2020-12-08 13:29:51 +0800] [17571] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:29:51 +0800] [17571] [INFO] Listening at: http://0.0.0.0:5000 (17571)
+[2020-12-08 13:29:51 +0800] [17571] [INFO] Using worker: sync
+[2020-12-08 13:29:51 +0800] [17580] [INFO] Booting worker with pid: 17580
+[2020-12-08 13:29:51 +0800] [17580] [ERROR] invalid character in identifier (app.py, line 55)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+[2020-12-08 13:29:51 +0800] [17580] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/mousika/mycar/app.py", line 55
+    print(“continue”)
+                   ^
+SyntaxError: invalid character in identifier
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.6/dist-packages/gunicorn/workers/base.py", line 157, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+[2020-12-08 13:29:51 +0800] [17580] [INFO] Worker exiting (pid: 17580)
+[2020-12-08 13:29:51 +0800] [17571] [INFO] Shutting down: Master
+[2020-12-08 13:29:51 +0800] [17571] [INFO] Reason: Worker failed to boot.
+[2020-12-08 13:30:23 +0800] [17770] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:30:23 +0800] [17770] [INFO] Listening at: http://0.0.0.0:5000 (17770)
+[2020-12-08 13:30:23 +0800] [17770] [INFO] Using worker: sync
+[2020-12-08 13:30:23 +0800] [17783] [INFO] Booting worker with pid: 17783
+[2020-12-08 13:33:17 +0800] [17770] [INFO] Handling signal: int
+[2020-12-08 13:33:17 +0800] [17783] [INFO] Worker exiting (pid: 17783)
+[2020-12-08 13:33:19 +0800] [17770] [INFO] Shutting down: Master
+[2020-12-08 13:33:23 +0800] [18948] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:33:23 +0800] [18948] [INFO] Listening at: http://0.0.0.0:5000 (18948)
+[2020-12-08 13:33:23 +0800] [18948] [INFO] Using worker: sync
+[2020-12-08 13:33:23 +0800] [18957] [INFO] Booting worker with pid: 18957
+[2020-12-08 13:35:59 +0800] [18957] [INFO] Worker reloading: /home/mousika/mycar/app.py modified
+[2020-12-08 13:35:59 +0800] [18957] [INFO] Worker exiting (pid: 18957)
+[2020-12-08 13:35:59 +0800] [18948] [INFO] Handling signal: int
+[2020-12-08 13:35:59 +0800] [18948] [INFO] Shutting down: Master
+[2020-12-08 13:36:01 +0800] [19985] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:36:01 +0800] [19985] [INFO] Listening at: http://0.0.0.0:5000 (19985)
+[2020-12-08 13:36:01 +0800] [19985] [INFO] Using worker: sync
+[2020-12-08 13:36:01 +0800] [19988] [INFO] Booting worker with pid: 19988
+[2020-12-08 13:37:00 +0800] [19988] [INFO] Worker reloading: /home/mousika/mycar/app.py modified
+[2020-12-08 13:37:00 +0800] [19988] [INFO] Worker exiting (pid: 19988)
+[2020-12-08 13:37:01 +0800] [20491] [INFO] Booting worker with pid: 20491
+[2020-12-08 13:38:16 +0800] [20491] [INFO] Worker reloading: /home/mousika/mycar/app.py modified
+[2020-12-08 13:38:16 +0800] [20491] [INFO] Worker exiting (pid: 20491)
+[2020-12-08 13:38:17 +0800] [21022] [INFO] Booting worker with pid: 21022
+[2020-12-08 13:41:46 +0800] [21022] [INFO] Worker reloading: /home/mousika/mycar/app.py modified
+[2020-12-08 13:41:46 +0800] [21022] [INFO] Worker exiting (pid: 21022)
+[2020-12-08 13:41:47 +0800] [22444] [INFO] Booting worker with pid: 22444
+[2020-12-08 13:41:54 +0800] [19985] [INFO] Handling signal: int
+[2020-12-08 13:41:54 +0800] [22444] [INFO] Worker exiting (pid: 22444)
+[2020-12-08 13:41:55 +0800] [19985] [INFO] Shutting down: Master
+[2020-12-08 13:41:57 +0800] [22508] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:41:57 +0800] [22508] [INFO] Listening at: http://0.0.0.0:5000 (22508)
+[2020-12-08 13:41:57 +0800] [22508] [INFO] Using worker: sync
+[2020-12-08 13:41:57 +0800] [22517] [INFO] Booting worker with pid: 22517
+[2020-12-08 13:44:10 +0800] [22508] [INFO] Handling signal: int
+[2020-12-08 13:44:11 +0800] [22517] [INFO] Worker exiting (pid: 22517)
+[2020-12-08 13:44:11 +0800] [22508] [INFO] Shutting down: Master
+[2020-12-08 13:49:37 +0800] [25416] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 13:49:37 +0800] [25416] [INFO] Listening at: http://0.0.0.0:5000 (25416)
+[2020-12-08 13:49:37 +0800] [25416] [INFO] Using worker: sync
+[2020-12-08 13:49:37 +0800] [25419] [INFO] Booting worker with pid: 25419
+[2020-12-08 14:05:06 +0800] [25416] [INFO] Handling signal: int
+[2020-12-08 14:05:06 +0800] [25419] [INFO] Worker exiting (pid: 25419)
+[2020-12-08 14:05:06 +0800] [25416] [INFO] Shutting down: Master
+[2020-12-08 14:05:13 +0800] [31288] [INFO] Starting gunicorn 20.0.4
+[2020-12-08 14:05:13 +0800] [31288] [INFO] Listening at: http://0.0.0.0:5000 (31288)
+[2020-12-08 14:05:13 +0800] [31288] [INFO] Using worker: sync
+[2020-12-08 14:05:13 +0800] [31297] [INFO] Booting worker with pid: 31297
+[2020-12-08 14:06:16 +0800] [31288] [INFO] Handling signal: int
+[2020-12-08 14:06:16 +0800] [31297] [INFO] Worker exiting (pid: 31297)
+[2020-12-08 14:06:17 +0800] [31288] [INFO] Shutting down: Master

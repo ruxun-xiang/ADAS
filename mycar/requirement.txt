@@ -1,0 +1,4 @@
+pillow
+docopt
+requests
+pyserial

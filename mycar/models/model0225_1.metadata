@@ -1,0 +1,1 @@
+{"input_names": ["img_in"], "output_names": ["angle_out/Softmax", "throttle_out/Relu"]}
